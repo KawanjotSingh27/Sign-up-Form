@@ -1,0 +1,129 @@
+@font-face {
+    font-family: rubik;
+    src: url(Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(Micro5-Regular.ttf);
+}
+
+body{
+    padding:0;
+    margin:0;
+    display:flex;
+}
+
+#sidebar{
+    background-image: url(forest_background.jpg);
+    height:100vh;
+    width:35vw;
+}
+
+#main{
+    width:65vw;
+    padding-top: 100px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#text{
+    font-size: 25px;
+    font-family: rubik;
+    margin-left: 40px;
+}
+
+#sign_up_form{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding:20px;
+    margin-bottom: 30px;
+}
+
+form{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: 250px;
+    margin-left: 20px;
+}
+
+form div{
+    margin-bottom: 20px;
+    flex-basis: 50%;
+}
+
+label{
+    font-size: 15px;
+    color:#363535;
+}
+
+#sign_up_form > p{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: rubik;
+}
+
+input{
+    font-size: 15px;
+    width:300px;
+    height:30px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+button{
+    margin-left: 40px;
+    height:50px;
+    width:200px;
+    border: 0;
+    background-color: #596D48;
+    color:white;
+    font-size: 18px;
+    font-family: rubik;
+    border-radius: 10px;
+}
+
+#main > p{
+    margin-left: 40px;
+    font-family: rubik;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color:#596D48;
+}
+
+#logo{
+    display:flex;
+    height:150px;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    margin-top:200px;   
+    padding:15px;
+}
+
+#logo p{
+    color:white;
+    font-family: micro5;
+    font-size: 170px;
+    margin:0;
+    padding-left: 10px;
+}
+
+input:focus-visible{
+    outline:none;
+    border: 1.5px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+}
+
+input[type="password"]:focus:invalid{
+    border: 1.5px solid red;
+}
+
+#message{
+    font-size: 15px;
+    color:#d12121;
+    margin-top: 0px;
+}
